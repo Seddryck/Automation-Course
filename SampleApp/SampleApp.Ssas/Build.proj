@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<Project  xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
+         DefaultTargets="SSASBuild">
+  <Target Name="SSASBuild">
+    <!-- Here we have a reference to the VS path to be used for the build and the relative path for the project (MD or Tabular).-->
+    <Exec Command='"C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\devenv.exe" "AdventureWorksDW2012Multidimensional-EE.dwproj" /Build'/>
+  </Target>
+</Project>
