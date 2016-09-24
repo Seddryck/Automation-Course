@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<Project  xmlns="http://schemas.microsoft.com/developer/msbuild/2003"
+         DefaultTargets="SSISBuild">
+  <UsingTask TaskName="DeploymentFileCompilerTask" AssemblyFile="C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\PrivateAssemblies\Microsoft.SqlServer.IntegrationServices.Build.dll" />
+ <!--note that the path to the assembly file referenced above is the one we have just added, the path may need to be amended if running in a different environment.-->
+  <ItemGroup>
+    <SSISProjPath Include="SampleApp.Ssis.dtproj"/> <!--contains the path of the SSIS project to be built-->
+  </ItemGroup>
+  
+  <Target Name="SSISBuild">
+    <Message Text="**************Building SSIS project: @(SSISProjPath) for configuration: $(CONFIGURATION)**************" />
+    <DeploymentFileCompilerTask
+		InputProject="@(SSISProjPath)"
+		Configuration="$(CONFIGURATION)"
+		ProtectionLevel="DontSaveSensitive">
+    </DeploymentFileCompilerTask>
+  </Target>
+ 
+</Project>
