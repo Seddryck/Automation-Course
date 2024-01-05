@@ -1,7 +1,8 @@
 repo_name: Seddryck/Automation-Course
 report_id: 8ab1b0cec62bf4aa5b8e3ea9aa7a6a27
+version: 0.1
 repo_type: Public
-timestamp: '2023-11-12T20:22:21+00:00'
+timestamp: '2024-01-05T08:47:54+00:00'
 requested_by: Seddryck
 provider: github
 branch: master
@@ -15,6 +16,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/Seddryck/Automation-Course
   detection_source: Repo Metadata
 - name: Visual Studio
   description: State-of-the-art tools and services that you can use to create great
@@ -25,6 +27,7 @@ tools:
   category: Build, Test, Deploy
   sub_category: Integrated Development Environment
   image_url: https://img.stackshare.io/service/1451/SR2hUhQN.png
+  detection_source_url: https://github.com/Seddryck/Automation-Course/blob/master/SampleApp/SampleApp.Ssas/AdventureWorksDW2012Multidimensional-EE.sln
   detection_source: SampleApp/SampleApp.Ssas/AdventureWorksDW2012Multidimensional-EE.sln
   last_updated_by: Cédric L. Charlier
   last_updated_on: 2016-09-24 19:43:30.000000000 Z
